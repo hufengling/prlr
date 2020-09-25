@@ -1,0 +1,23 @@
+Package: prlr
+Title: MS Lesion Identification and PRL Classification
+Version: 0.1
+Date: 2020-09-16
+Authors@R: 
+    person(given = "Carolyn",
+           family = "Lou",
+           role = c("aut", "cre"),
+           email = "louc@pennmedicine.upenn.edu",
+           comment = c(ORCID = "0000-0002-7604-833X"))
+Description: Automated Lesion Identification and PRL Classification.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends:
+   R (>= 3.5.0)
+Imports: 
+    lesiontools,
+    fslr,
+    Rfast,
+    RIA
+URL: https://github.com/carolynlou/prlr
+RoxygenNote: 6.1.1
