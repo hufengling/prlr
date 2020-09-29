@@ -4,8 +4,7 @@
 \alias{findprls}
 \title{MS Lesion Identification and PRL Classification with Pre-trained Model}
 \usage{
-findprls(probmap, lesmask = probmap > thresh, phasefile,
-  predmodel = pretrainedmodel, disc = T)
+findprls(probmap, lesmask = probmap > thresh, phasefile, disc = T)
 }
 \arguments{
 \item{probmap}{Lesion probability map. We recommend using lesion segmentation algorithm MIMoSA.}
@@ -13,8 +12,6 @@ findprls(probmap, lesmask = probmap > thresh, phasefile,
 \item{lesmask}{Lesion segmentation mask. Given a probability threshold, automatically binarizes lesion probability map into a segmentation mask.}
 
 \item{phasefile}{Location of the T2*-phase image}
-
-\item{predmodel}{Model used to generate classifications. This automatically uses a pre-trained model ported with the package.}
 
 \item{disc}{Calculate discretized versions of first order radiomic features?}
 }

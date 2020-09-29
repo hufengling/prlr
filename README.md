@@ -11,7 +11,7 @@ lesmask = readnii('/lesmask.nii.gz')
 phasefile = '/phasefile'
 pretrainedmodel = prlr::prlmodel_orig
 
-findprls_out = findprls(probmap = probmap, lesmask = lesmask, phasefile = phasefile, predmodel = pretrainedmodel)
+findprls_out = findprls(probmap = probmap, lesmask = lesmask, phasefile = phasefile, disc = T)
 
 leslabels_img = findprls_out$leslabels
 ria.df = findprls_out$ria.df
