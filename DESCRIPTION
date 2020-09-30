@@ -16,7 +16,7 @@ Depends:
    R (>= 3.5.0)
 Imports: 
     lesiontools,
-    fslr,
+    neurobase,
     Rfast,
     RIA
 URL: https://github.com/carolynlou/prlr

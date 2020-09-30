@@ -4,3 +4,4 @@
 #' @name prlmodel_orig_disc8_disc64
 #' @usage prlmodel_orig_disc8_disc64
 #' @keywords pretrained model
+NULL

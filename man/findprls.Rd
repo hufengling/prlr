@@ -4,7 +4,7 @@
 \alias{findprls}
 \title{MS Lesion Identification and PRL Classification with Pre-trained Model}
 \usage{
-findprls(probmap, lesmask = probmap > thresh, phasefile, disc = T)
+findprls(probmap, lesmask, phasefile, disc = T)
 }
 \arguments{
 \item{probmap}{Lesion probability map. We recommend using lesion segmentation algorithm MIMoSA.}

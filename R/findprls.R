@@ -8,9 +8,10 @@
 #' @import lesiontools
 #' @import RIA
 #' @import Rfast
+#' @importFrom stats predict
 #' @return A list with 3 objects: a NIfTI file of a lesion label map, a dataframe containing all radiomic features, and a vector containing lesion-wise probability of being a PRL
 
-findprls = function(probmap, lesmask = probmap > thresh, phasefile, disc = T){
+findprls = function(probmap, lesmask, phasefile, disc = T){
   # run lesion identification code
   lesident <- lesion_identification(probmap = probmap,
                                     lesmask = lesmask)
@@ -35,6 +36,6 @@ findprls = function(probmap, lesmask = probmap > thresh, phasefile, disc = T){
     pretrainedmodel = prlr::prlmodel_orig
   }
   
-  return(list(leslabels = leslabels.out, ria.df = ria.df, preds = predict(pretrainedmodel, newdata = ria.df, type = "prob")))
+  return(list(leslabels = leslabels.out, ria.df = ria.df, preds = stats::predict(pretrainedmodel, newdata = ria.df, type = "prob")))
   
 }
