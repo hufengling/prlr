@@ -1,4 +1,8 @@
 # prlr
+  <!-- badges: start -->
+  [![Travis build status](https://travis-ci.org/carolynlou/prlr.svg?branch=master)](https://travis-ci.org/carolynlou/prlr)
+  <!-- badges: end -->
+  
 This R package implements the method described in Lou (2020): https://www.biorxiv.org/content/10.1101/2020.08.31.276238v1. This package takes in a lesion probability map, a lesion segmentation mask, and the filepath to a phase image. It then identifies distinct lesions and provides PRL classifications for each identified lesion based on a pretrained model.
 
 The primary function in this package is the function `findprls`. A sample script is provided below.
