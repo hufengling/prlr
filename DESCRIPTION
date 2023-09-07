@@ -15,9 +15,11 @@ LazyData: true
 Depends:
    R (>= 3.5.0)
 Imports: 
-    lesiontools,
+    ANTsRCore,
+    extrantsr,
+    oro.nifti,
     neurobase,
     Rfast,
     RIA
 URL: https://github.com/carolynlou/prlr
-RoxygenNote: 6.1.1
+RoxygenNote: 7.2.3
