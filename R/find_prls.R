@@ -17,7 +17,7 @@
 #' 
 #' @return A list with 2 objects: a NIfTI file of a lesions where each lesion is labeled with its probability of being a PRL and a dataframe containing all radiomic features.
 
-findprls <- function(phase_path, prob_map, bin_map,
+find_prls <- function(phase_path, prob_map, bin_map,
                      register_maps = F,
                      prob_map_image = NULL, epi_image = NULL,
                      verbose = F) {
